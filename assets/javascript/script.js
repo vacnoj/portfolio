@@ -34,8 +34,8 @@ $(document).ready(function(){
         }
       });
      
-      $("#button1").animate({left: '35%', width: '+=100px'}, 1000);
-      $("#button1").animate({left: '0%', width: '-=100px'}, 1000);
+      $("#button1").animate({left: '35%', width: '410px'}, 1000);
+      $("#button1").animate({left: '0%', width: '260px'}, 1000);
     } },
     {selector: '#project2', offset: 300, callback: function(event) {
       $("#project2").css({opacity:1});
@@ -48,8 +48,8 @@ $(document).ready(function(){
         }
       });
      
-      $("#button2").animate({left: '35%', width: '+=100px'}, 1000);
-      $("#button2").animate({left: '0%', width: '-=100px'}, 1000);
+      $("#button2").animate({left: '35%', width: '410px'}, 1000);
+      $("#button2").animate({left: '0%', width: '260px'}, 1000);
     } },
     {selector: '#project3', offset: 300, callback: function(event) {
       $("#project3").css({opacity:1});
@@ -62,8 +62,8 @@ $(document).ready(function(){
         }
       });
      
-      $("#button3").animate({left: '35%', width: '+=100px'}, 1000);
-      $("#button3").animate({left: '0%', width: '-=100px'}, 1000);
+      $("#button3").animate({left: '35%', width: '410px'}, 1000);
+      $("#button3").animate({left: '0%', width: '260px'}, 1000);
     } },
     {selector: '#project4', offset: 300, callback: function(event) {
       $("#project4").css({opacity:1});
@@ -76,8 +76,8 @@ $(document).ready(function(){
         }
       });
      
-      $("#button4").animate({left: '35%', width: '+=100px'}, 1000);
-      $("#button4").animate({left: '0%', width: '-=100px'}, 1000);
+      $("#button4").animate({left: '35%', width: '410px'}, 1000);
+      $("#button4").animate({left: '0%', width: '260px'}, 1000);
     } },
     {selector: '#project5', offset: 300, callback: function(event) {
       $("#project5").css({opacity:1});
@@ -90,9 +90,9 @@ $(document).ready(function(){
         }
       });
      
-      $("#button5").animate({left: '35%', width: '+=100px'}, 1000);
-      $("#button5").animate({left: '0%', width: '-=100px'}, 1000);
-    } },
+      $("#button5").animate({left: '35%', width: '410px'}, 1000);
+      $("#button5").animate({left: '0%', width: '260px'}, 1000);
+    } }
     
   ];
   Materialize.scrollFire(options);
