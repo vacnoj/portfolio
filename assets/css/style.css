@@ -16,7 +16,7 @@ parallax-container {
    position: relative;
    display: block;
    opacity: 0;
-   margin-top: 10px;
+   margin-top: 20px;
    width: 270px;
  }
 
@@ -24,6 +24,10 @@ parallax-container {
 display: inherit;
 }
 
+.heading {
+  font-size: 4em;
+   color: #2296f3
+}
  #name {
    position: relative;
    top: 30%;
