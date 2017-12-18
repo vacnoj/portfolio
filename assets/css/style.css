@@ -21,8 +21,9 @@ parallax-container {
    left: 0px
  }
 
-.project a {
-display: inherit;
+#button1, #button2, #button3, #button4, #button5 {
+width: 260px;
+height: 54px;
 padding: 0;
 }
 
