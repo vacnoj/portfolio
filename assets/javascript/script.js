@@ -25,7 +25,7 @@ $(document).ready(function(){
   var options = [
     {selector: '#project1', offset: 300, callback: function(event) {
       $("#project1").css({opacity:1});
-      $({deg: 0}).animate({deg: 360}, {
+      $({deg: 0}).animate({deg: 720}, {
         duration: 2000,
         step: function(now) {
           $("#project1").css({
@@ -34,11 +34,12 @@ $(document).ready(function(){
         }
       });
      
-      $("#project1").animate({left: '35%'}, 2000);
+      $("#button1").animate({left: '35%', width: '+=100px'}, 1000);
+      $("#button1").animate({left: '0%', width: '-=100px'}, 1000);
     } },
     {selector: '#project2', offset: 300, callback: function(event) {
       $("#project2").css({opacity:1});
-      $({deg: 0}).animate({deg: 360}, {
+      $({deg: 0}).animate({deg: 720}, {
         duration: 2000,
         step: function(now) {
           $("#project2").css({
@@ -47,11 +48,12 @@ $(document).ready(function(){
         }
       });
      
-      $("#project2").animate({left: '35%'}, 2000);
+      $("#button2").animate({left: '35%', width: '+=100px'}, 1000);
+      $("#button2").animate({left: '0%', width: '-=100px'}, 1000);
     } },
     {selector: '#project3', offset: 300, callback: function(event) {
       $("#project3").css({opacity:1});
-      $({deg: 0}).animate({deg: 360}, {
+      $({deg: 0}).animate({deg: 720}, {
         duration: 2000,
         step: function(now) {
           $("#project3").css({
@@ -59,12 +61,13 @@ $(document).ready(function(){
           });
         }
       });
-   
-      $("#project3").animate({left: '35%'}, 2000);
+     
+      $("#button3").animate({left: '35%', width: '+=100px'}, 1000);
+      $("#button3").animate({left: '0%', width: '-=100px'}, 1000);
     } },
     {selector: '#project4', offset: 300, callback: function(event) {
       $("#project4").css({opacity:1});
-      $({deg: 0}).animate({deg: 360}, {
+      $({deg: 0}).animate({deg: 720}, {
         duration: 2000,
         step: function(now) {
           $("#project4").css({
@@ -72,12 +75,13 @@ $(document).ready(function(){
           });
         }
       });
-    
-      $("#project4").animate({left: '35%'}, 2000);
+     
+      $("#button4").animate({left: '35%', width: '+=100px'}, 1000);
+      $("#button4").animate({left: '0%', width: '-=100px'}, 1000);
     } },
-    {selector: '#project5', offset: 200, callback: function(event) {
+    {selector: '#project5', offset: 300, callback: function(event) {
       $("#project5").css({opacity:1});
-      $({deg: 0}).animate({deg: 360}, {
+      $({deg: 0}).animate({deg: 720}, {
         duration: 2000,
         step: function(now) {
           $("#project5").css({
@@ -85,9 +89,11 @@ $(document).ready(function(){
           });
         }
       });
-
-      $("#project5").animate({left: '35%'}, 2000);
-    } }
+     
+      $("#button5").animate({left: '35%', width: '+=100px'}, 1000);
+      $("#button5").animate({left: '0%', width: '-=100px'}, 1000);
+    } },
+    
   ];
   Materialize.scrollFire(options);
       
