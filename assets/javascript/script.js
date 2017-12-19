@@ -4,6 +4,8 @@ $(document).ready(function(){
 //enable modals
   $('.modal').modal();
 
+  $(".background").slideUp();
+
   setTimeout(animateName, 2000);
   function animateName() {
     $({deg: 0}).animate({deg: 360}, {
@@ -92,10 +94,24 @@ $(document).ready(function(){
      
       $("#button5").animate({left: '35%', width: '410px'}, 1000);
       $("#button5").animate({left: '0%', width: '260px'}, 1000);
+    } },
+    {selector: '.background', offset: 615, callback: function(event) {
+      
+      setTimeout(slide, 6000);
+      function slide() {
+        $(".background").slideDown(2000)
+      }
+      // $("#button5").animate({left: '0%', width: '260px'}, 1000);
     } }
     
   ];
   Materialize.scrollFire(options);
+
+$('#submit').click(function() {  
+  event.preventDefault();
+
+  
+});
       
 });
   
