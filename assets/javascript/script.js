@@ -95,7 +95,7 @@ $(document).ready(function(){
       $("#button5").animate({left: '35%', width: '410px'}, 1000);
       $("#button5").animate({left: '0%', width: '260px'}, 1000);
     } },
-    {selector: '.background', offset: 615, callback: function(event) {
+    {selector: '.background', offset: 0, callback: function(event) {
       
       setTimeout(slide, 6000);
       function slide() {
@@ -108,9 +108,21 @@ $(document).ready(function(){
   Materialize.scrollFire(options);
 
 $('#submit').click(function() {  
-  event.preventDefault();
+  // event.preventDefault();
+  function sendMail() {
+    $myform = $('#contact-form');
+    $myform.prop ('action','mailto:vacnoj@yahoo.com');
+    $myform.submit();
+  }
+  sendMail();
+  setTimeout(clearField, 5000);
 
-  
+  function clearField() {
+    $('#comments').val('');
+  $('#email').val('');
+  $('#phone-number').val('');
+  $('#contact-name').val('');
+  }
 });
       
 });

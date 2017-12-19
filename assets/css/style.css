@@ -77,7 +77,10 @@ li {
 .sub-heading {
   font-size: 2em;
   color: #2296f3;
+}
 
+input {
+  color: white;
 }
 /* 
 label color
