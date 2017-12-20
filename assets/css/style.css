@@ -34,7 +34,7 @@ padding: 0;
 
  #name {
    position: relative;
-   top: 30%;
+   top: 20%;
    text-align: center;
    font-size: 4em;
    color: #2296f3
@@ -42,7 +42,7 @@ padding: 0;
 
  #address {
   position: relative;
-  top: 30%;
+  top: 20%;
   text-align: center;
   font-size: 2em;
   color: #2296f3

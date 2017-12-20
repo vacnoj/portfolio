@@ -27,7 +27,7 @@ $(document).ready(function(){
   var options = [
     {selector: '#project1', offset: 300, callback: function(event) {
       $("#project1").css({opacity:1});
-      $({deg: 0}).animate({deg: 720}, {
+      $({deg: 0}).animate({deg: 360}, {
         duration: 2000,
         step: function(now) {
           $("#project1").css({
@@ -41,7 +41,7 @@ $(document).ready(function(){
     } },
     {selector: '#project2', offset: 300, callback: function(event) {
       $("#project2").css({opacity:1});
-      $({deg: 0}).animate({deg: 720}, {
+      $({deg: 360}).animate({deg: 0}, {
         duration: 2000,
         step: function(now) {
           $("#project2").css({
@@ -55,7 +55,7 @@ $(document).ready(function(){
     } },
     {selector: '#project3', offset: 300, callback: function(event) {
       $("#project3").css({opacity:1});
-      $({deg: 0}).animate({deg: 720}, {
+      $({deg: 0}).animate({deg: 360}, {
         duration: 2000,
         step: function(now) {
           $("#project3").css({
@@ -69,7 +69,7 @@ $(document).ready(function(){
     } },
     {selector: '#project4', offset: 300, callback: function(event) {
       $("#project4").css({opacity:1});
-      $({deg: 0}).animate({deg: 720}, {
+      $({deg: 360}).animate({deg: 0}, {
         duration: 2000,
         step: function(now) {
           $("#project4").css({
@@ -83,7 +83,7 @@ $(document).ready(function(){
     } },
     {selector: '#project5', offset: 300, callback: function(event) {
       $("#project5").css({opacity:1});
-      $({deg: 0}).animate({deg: 720}, {
+      $({deg: 0}).animate({deg: 360}, {
         duration: 2000,
         step: function(now) {
           $("#project5").css({
@@ -94,18 +94,16 @@ $(document).ready(function(){
      
       $("#button5").animate({left: '35%', width: '410px'}, 1000);
       $("#button5").animate({left: '0%', width: '260px'}, 1000);
-    } },
-    {selector: '.background', offset: 0, callback: function(event) {
-      
-      setTimeout(slide, 6000);
-      function slide() {
-        $(".background").slideDown(2000)
-      }
-      // $("#button5").animate({left: '0%', width: '260px'}, 1000);
     } }
     
   ];
   Materialize.scrollFire(options);
+
+  $(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+      $(".background").slideDown(2000);
+    } else $(".background").slideUp(2000);
+ });
 
 $('#submit').click(function() {  
   // event.preventDefault();
