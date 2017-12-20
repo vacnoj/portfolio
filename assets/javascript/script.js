@@ -102,7 +102,7 @@ $(document).ready(function(){
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
       $(".background").slideDown(2000);
-    } else $(".background").slideUp(2000);
+    }
  });
 
 $('#submit').click(function() {  
