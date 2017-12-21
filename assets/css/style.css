@@ -37,8 +37,29 @@ padding: 0;
    top: 20%;
    text-align: center;
    font-size: 4em;
-   color: #2296f3
+   color: #2296f3;
  }
+
+ @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.project:hover {
+	animation: bounce 1s;
+}
 
  #address {
   position: relative;
